@@ -2,5 +2,7 @@ import 'package:fpdart/fpdart.dart';
 import 'package:my_cat/core/errors/failures/failure.dart';
 
 abstract class ImageRepository {
-  Future<Either<Failure, Map<String, dynamic>>> getAllImages();
+  const ImageRepository();
+
+  Future<Either<Failure, List>> getAllImages(int page, int limit);
 }

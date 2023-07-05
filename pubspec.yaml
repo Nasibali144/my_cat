@@ -21,6 +21,12 @@ dependencies:
   # either - functional programming
   fpdart: ^0.6.0
 
+  # network
+  http: ^1.1.0
+
+  # state management
+  provider: ^6.0.5
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
