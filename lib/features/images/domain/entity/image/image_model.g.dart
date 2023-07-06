@@ -6,7 +6,7 @@ part of 'image_model.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$FullImage _$$FullImageFromJson(Map<String, dynamic> json) => _$FullImage(
+_$_FullImage _$$_FullImageFromJson(Map<String, dynamic> json) => _$_FullImage(
       breeds: (json['breeds'] as List<dynamic>?)
               ?.map((e) => Breed.fromJson(e as Map<String, dynamic>))
               .toList() ??
@@ -19,29 +19,25 @@ _$FullImage _$$FullImageFromJson(Map<String, dynamic> json) => _$FullImage(
       url: json['url'] as String,
       width: json['width'] as num,
       height: json['height'] as num,
-      $type: json['runtimeType'] as String?,
     );
 
-Map<String, dynamic> _$$FullImageToJson(_$FullImage instance) =>
+Map<String, dynamic> _$$_FullImageToJson(_$_FullImage instance) =>
     <String, dynamic>{
-      'breeds': instance.breeds,
-      'categories': instance.categories,
+      'breeds': instance.breeds.map((e) => e.toJson()).toList(),
+      'categories': instance.categories.map((e) => e.toJson()).toList(),
       'id': instance.id,
       'url': instance.url,
       'width': instance.width,
       'height': instance.height,
-      'runtimeType': instance.$type,
     };
 
-_$PartImage _$$PartImageFromJson(Map<String, dynamic> json) => _$PartImage(
+_$_PartImage _$$_PartImageFromJson(Map<String, dynamic> json) => _$_PartImage(
       id: json['id'] as String,
       url: json['url'] as String,
-      $type: json['runtimeType'] as String?,
     );
 
-Map<String, dynamic> _$$PartImageToJson(_$PartImage instance) =>
+Map<String, dynamic> _$$_PartImageToJson(_$_PartImage instance) =>
     <String, dynamic>{
       'id': instance.id,
       'url': instance.url,
-      'runtimeType': instance.$type,
     };

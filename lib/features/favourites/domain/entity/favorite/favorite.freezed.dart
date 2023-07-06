@@ -45,6 +45,8 @@ abstract class $FavoriteCopyWith<$Res> {
       String subId,
       String createdAt,
       PartImage image});
+
+  $PartImageCopyWith<$Res> get image;
 }
 
 /// @nodoc
@@ -65,7 +67,7 @@ class _$FavoriteCopyWithImpl<$Res, $Val extends Favorite>
     Object? imageId = null,
     Object? subId = null,
     Object? createdAt = null,
-    Object? image = freezed,
+    Object? image = null,
   }) {
     return _then(_value.copyWith(
       id: null == id
@@ -88,11 +90,19 @@ class _$FavoriteCopyWithImpl<$Res, $Val extends Favorite>
           ? _value.createdAt
           : createdAt // ignore: cast_nullable_to_non_nullable
               as String,
-      image: freezed == image
+      image: null == image
           ? _value.image
           : image // ignore: cast_nullable_to_non_nullable
               as PartImage,
     ) as $Val);
+  }
+
+  @override
+  @pragma('vm:prefer-inline')
+  $PartImageCopyWith<$Res> get image {
+    return $PartImageCopyWith<$Res>(_value.image, (value) {
+      return _then(_value.copyWith(image: value) as $Val);
+    });
   }
 }
 
@@ -110,6 +120,9 @@ abstract class _$$_FavoriteCopyWith<$Res> implements $FavoriteCopyWith<$Res> {
       String subId,
       String createdAt,
       PartImage image});
+
+  @override
+  $PartImageCopyWith<$Res> get image;
 }
 
 /// @nodoc
@@ -128,7 +141,7 @@ class __$$_FavoriteCopyWithImpl<$Res>
     Object? imageId = null,
     Object? subId = null,
     Object? createdAt = null,
-    Object? image = freezed,
+    Object? image = null,
   }) {
     return _then(_$_Favorite(
       id: null == id
@@ -151,7 +164,7 @@ class __$$_FavoriteCopyWithImpl<$Res>
           ? _value.createdAt
           : createdAt // ignore: cast_nullable_to_non_nullable
               as String,
-      image: freezed == image
+      image: null == image
           ? _value.image
           : image // ignore: cast_nullable_to_non_nullable
               as PartImage,
@@ -203,13 +216,13 @@ class _$_Favorite implements _Favorite {
             (identical(other.subId, subId) || other.subId == subId) &&
             (identical(other.createdAt, createdAt) ||
                 other.createdAt == createdAt) &&
-            const DeepCollectionEquality().equals(other.image, image));
+            (identical(other.image, image) || other.image == image));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(runtimeType, id, userId, imageId, subId,
-      createdAt, const DeepCollectionEquality().hash(image));
+  int get hashCode =>
+      Object.hash(runtimeType, id, userId, imageId, subId, createdAt, image);
 
   @JsonKey(ignore: true)
   @override

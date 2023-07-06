@@ -1,0 +1,13 @@
+{
+  "id": 1057830,
+  "user_id": "fw8m4q",
+  "image_id": "ol",
+  "sub_id": "my-user-1234",
+  "created_at": "2023-06-26T04:27:22.000Z",
+  "value": 1,
+  "country_code": "US",
+  "image": {
+    "id": "ol",
+    "url": "https://cdn2.thecatapi.com/images/ol.jpg"
+  }
+}

@@ -8,7 +8,8 @@ part of 'vote.dart';
 
 _$_Vote _$$_VoteFromJson(Map<String, dynamic> json) => _$_Vote(
       id: json['id'] as int,
-      userId: json['user_id'] as String,
+      value: json['value'] as int,
+      userId: json['user_id'] as String?,
       imageId: json['image_id'] as String,
       subId: json['sub_id'] as String,
       createdAt: json['created_at'] as String,
@@ -18,6 +19,7 @@ _$_Vote _$$_VoteFromJson(Map<String, dynamic> json) => _$_Vote(
 
 Map<String, dynamic> _$$_VoteToJson(_$_Vote instance) => <String, dynamic>{
       'id': instance.id,
+      'value': instance.value,
       'user_id': instance.userId,
       'image_id': instance.imageId,
       'sub_id': instance.subId,

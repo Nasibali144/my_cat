@@ -6,21 +6,28 @@ part 'image_model.freezed.dart';
 part 'image_model.g.dart';
 
 @freezed
-sealed class ImageModel with _$ImageModel {
-  const factory ImageModel.full({
+class FullImage with _$FullImage {
+  @JsonSerializable(fieldRename: FieldRename.snake, explicitToJson: true)
+  const factory FullImage({
     @Default(<Breed>[]) List<Breed> breeds,
     @Default(<Category>[]) List<Category> categories,
     required String id,
     required String url,
     required num width,
     required num height,
-  }) = FullImage;
+  }) = _FullImage;
 
-  const factory ImageModel.few({
+  factory FullImage.fromJson(Map<String, Object?> json) =>
+      _$FullImageFromJson(json);
+}
+
+@freezed
+class PartImage with _$PartImage {
+  const factory PartImage({
     required String id,
     required String url,
-  }) = PartImage;
+  }) = _PartImage;
 
-  factory ImageModel.fromJson(Map<String, Object?> json) =>
-      _$ImageModelFromJson(json);
+  factory PartImage.fromJson(Map<String, Object?> json) =>
+      _$PartImageFromJson(json);
 }
