@@ -12,8 +12,7 @@ class GetAllImageUsecase
   const GetAllImageUsecase({required this.repository});
 
   @override
-  Future<Either<Failure, List<FullImage>>> call(
-      ImagePaginationParam parameter) async {
+  Future<Either<Failure, List<FullImage>>> call(ImagePaginationParam parameter) async {
     int page = parameter.page;
     int limit = parameter.limit;
     final result = await repository.getAllImages(page, limit);

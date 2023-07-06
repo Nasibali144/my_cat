@@ -1,4 +1,3 @@
-
 import 'package:freezed_annotation/freezed_annotation.dart';
 
 import '../weight/weight.dart';
@@ -8,47 +7,46 @@ part 'breed.freezed.dart';
 
 @freezed
 class Breed with _$Breed {
-  @JsonSerializable(fieldRename: FieldRename.snake,explicitToJson: true)
+  @JsonSerializable(fieldRename: FieldRename.snake, explicitToJson: true)
   factory Breed({
     required Weight weight,
     required String id,
     required String name,
-    required String cfaUrl,
-    required String vetstreetUrl,
-    required String vcahospitalsUrl,
+    String? cfaUrl,
+    String? vetstreetUrl,
+    String? vcahospitalsUrl,
     required String temperament,
     required String origin,
-    required String countryCodes,
-    required String countryCode,
-    required String description,
+    String? countryCodes,
+    String? countryCode,
+    String? description,
     required String lifeSpan,
-    required num indoor,
-    required num lap,
-    required String altNames,
-    required num adaptability,
-    required num affectionLevel,
-    required num childFriendly,
-    required num dogFriendly,
-    required num energyLevel,
-    required num grooming,
-    required num healthIssues,
-    required num intelligence,
-    required num sheddingLevel,
-    required num socialNeeds,
-    required num strangerFriendly,
-    required num vocalisation,
-    required num experimental,
-    required num hairless,
-    required num natural,
-    required num rare,
-    required num rex,
-    required num suppressedTail,
-    required num shortLegs,
+    num? indoor,
+    num? lap,
+    String? altNames,
+    num? adaptability,
+    num? affectionLevel,
+    num? childFriendly,
+    num? dogFriendly,
+    num? energyLevel,
+    num? grooming,
+    num? healthIssues,
+    num? intelligence,
+    num? sheddingLevel,
+    num? socialNeeds,
+    num? strangerFriendly,
+    num? vocalisation,
+    num? experimental,
+    num? hairless,
+    num? natural,
+    num? rare,
+    num? rex,
+    num? suppressedTail,
+    num? shortLegs,
     required String wikipediaUrl,
-    required num hypoallergenic,
-    required String referenceImageId,
-}) = _Breed;
-factory Breed.fromJson(Map<String, Object?> json) => _$BreedFromJson(json);
+    num? hypoallergenic,
+    String? referenceImageId,
+  }) = _Breed;
+
+  factory Breed.fromJson(Map<String, Object?> json) => _$BreedFromJson(json);
 }
-
-

@@ -23,40 +23,40 @@ mixin _$Breed {
   Weight get weight => throw _privateConstructorUsedError;
   String get id => throw _privateConstructorUsedError;
   String get name => throw _privateConstructorUsedError;
-  String get cfaUrl => throw _privateConstructorUsedError;
-  String get vetstreetUrl => throw _privateConstructorUsedError;
-  String get vcahospitalsUrl => throw _privateConstructorUsedError;
+  String? get cfaUrl => throw _privateConstructorUsedError;
+  String? get vetstreetUrl => throw _privateConstructorUsedError;
+  String? get vcahospitalsUrl => throw _privateConstructorUsedError;
   String get temperament => throw _privateConstructorUsedError;
   String get origin => throw _privateConstructorUsedError;
-  String get countryCodes => throw _privateConstructorUsedError;
-  String get countryCode => throw _privateConstructorUsedError;
-  String get description => throw _privateConstructorUsedError;
+  String? get countryCodes => throw _privateConstructorUsedError;
+  String? get countryCode => throw _privateConstructorUsedError;
+  String? get description => throw _privateConstructorUsedError;
   String get lifeSpan => throw _privateConstructorUsedError;
-  num get indoor => throw _privateConstructorUsedError;
-  num get lap => throw _privateConstructorUsedError;
-  String get altNames => throw _privateConstructorUsedError;
-  num get adaptability => throw _privateConstructorUsedError;
-  num get affectionLevel => throw _privateConstructorUsedError;
-  num get childFriendly => throw _privateConstructorUsedError;
-  num get dogFriendly => throw _privateConstructorUsedError;
-  num get energyLevel => throw _privateConstructorUsedError;
-  num get grooming => throw _privateConstructorUsedError;
-  num get healthIssues => throw _privateConstructorUsedError;
-  num get intelligence => throw _privateConstructorUsedError;
-  num get sheddingLevel => throw _privateConstructorUsedError;
-  num get socialNeeds => throw _privateConstructorUsedError;
-  num get strangerFriendly => throw _privateConstructorUsedError;
-  num get vocalisation => throw _privateConstructorUsedError;
-  num get experimental => throw _privateConstructorUsedError;
-  num get hairless => throw _privateConstructorUsedError;
-  num get natural => throw _privateConstructorUsedError;
-  num get rare => throw _privateConstructorUsedError;
-  num get rex => throw _privateConstructorUsedError;
-  num get suppressedTail => throw _privateConstructorUsedError;
-  num get shortLegs => throw _privateConstructorUsedError;
+  num? get indoor => throw _privateConstructorUsedError;
+  num? get lap => throw _privateConstructorUsedError;
+  String? get altNames => throw _privateConstructorUsedError;
+  num? get adaptability => throw _privateConstructorUsedError;
+  num? get affectionLevel => throw _privateConstructorUsedError;
+  num? get childFriendly => throw _privateConstructorUsedError;
+  num? get dogFriendly => throw _privateConstructorUsedError;
+  num? get energyLevel => throw _privateConstructorUsedError;
+  num? get grooming => throw _privateConstructorUsedError;
+  num? get healthIssues => throw _privateConstructorUsedError;
+  num? get intelligence => throw _privateConstructorUsedError;
+  num? get sheddingLevel => throw _privateConstructorUsedError;
+  num? get socialNeeds => throw _privateConstructorUsedError;
+  num? get strangerFriendly => throw _privateConstructorUsedError;
+  num? get vocalisation => throw _privateConstructorUsedError;
+  num? get experimental => throw _privateConstructorUsedError;
+  num? get hairless => throw _privateConstructorUsedError;
+  num? get natural => throw _privateConstructorUsedError;
+  num? get rare => throw _privateConstructorUsedError;
+  num? get rex => throw _privateConstructorUsedError;
+  num? get suppressedTail => throw _privateConstructorUsedError;
+  num? get shortLegs => throw _privateConstructorUsedError;
   String get wikipediaUrl => throw _privateConstructorUsedError;
-  num get hypoallergenic => throw _privateConstructorUsedError;
-  String get referenceImageId => throw _privateConstructorUsedError;
+  num? get hypoallergenic => throw _privateConstructorUsedError;
+  String? get referenceImageId => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -72,40 +72,40 @@ abstract class $BreedCopyWith<$Res> {
       {Weight weight,
       String id,
       String name,
-      String cfaUrl,
-      String vetstreetUrl,
-      String vcahospitalsUrl,
+      String? cfaUrl,
+      String? vetstreetUrl,
+      String? vcahospitalsUrl,
       String temperament,
       String origin,
-      String countryCodes,
-      String countryCode,
-      String description,
+      String? countryCodes,
+      String? countryCode,
+      String? description,
       String lifeSpan,
-      num indoor,
-      num lap,
-      String altNames,
-      num adaptability,
-      num affectionLevel,
-      num childFriendly,
-      num dogFriendly,
-      num energyLevel,
-      num grooming,
-      num healthIssues,
-      num intelligence,
-      num sheddingLevel,
-      num socialNeeds,
-      num strangerFriendly,
-      num vocalisation,
-      num experimental,
-      num hairless,
-      num natural,
-      num rare,
-      num rex,
-      num suppressedTail,
-      num shortLegs,
+      num? indoor,
+      num? lap,
+      String? altNames,
+      num? adaptability,
+      num? affectionLevel,
+      num? childFriendly,
+      num? dogFriendly,
+      num? energyLevel,
+      num? grooming,
+      num? healthIssues,
+      num? intelligence,
+      num? sheddingLevel,
+      num? socialNeeds,
+      num? strangerFriendly,
+      num? vocalisation,
+      num? experimental,
+      num? hairless,
+      num? natural,
+      num? rare,
+      num? rex,
+      num? suppressedTail,
+      num? shortLegs,
       String wikipediaUrl,
-      num hypoallergenic,
-      String referenceImageId});
+      num? hypoallergenic,
+      String? referenceImageId});
 
   $WeightCopyWith<$Res> get weight;
 }
@@ -126,40 +126,40 @@ class _$BreedCopyWithImpl<$Res, $Val extends Breed>
     Object? weight = null,
     Object? id = null,
     Object? name = null,
-    Object? cfaUrl = null,
-    Object? vetstreetUrl = null,
-    Object? vcahospitalsUrl = null,
+    Object? cfaUrl = freezed,
+    Object? vetstreetUrl = freezed,
+    Object? vcahospitalsUrl = freezed,
     Object? temperament = null,
     Object? origin = null,
-    Object? countryCodes = null,
-    Object? countryCode = null,
-    Object? description = null,
+    Object? countryCodes = freezed,
+    Object? countryCode = freezed,
+    Object? description = freezed,
     Object? lifeSpan = null,
-    Object? indoor = null,
-    Object? lap = null,
-    Object? altNames = null,
-    Object? adaptability = null,
-    Object? affectionLevel = null,
-    Object? childFriendly = null,
-    Object? dogFriendly = null,
-    Object? energyLevel = null,
-    Object? grooming = null,
-    Object? healthIssues = null,
-    Object? intelligence = null,
-    Object? sheddingLevel = null,
-    Object? socialNeeds = null,
-    Object? strangerFriendly = null,
-    Object? vocalisation = null,
-    Object? experimental = null,
-    Object? hairless = null,
-    Object? natural = null,
-    Object? rare = null,
-    Object? rex = null,
-    Object? suppressedTail = null,
-    Object? shortLegs = null,
+    Object? indoor = freezed,
+    Object? lap = freezed,
+    Object? altNames = freezed,
+    Object? adaptability = freezed,
+    Object? affectionLevel = freezed,
+    Object? childFriendly = freezed,
+    Object? dogFriendly = freezed,
+    Object? energyLevel = freezed,
+    Object? grooming = freezed,
+    Object? healthIssues = freezed,
+    Object? intelligence = freezed,
+    Object? sheddingLevel = freezed,
+    Object? socialNeeds = freezed,
+    Object? strangerFriendly = freezed,
+    Object? vocalisation = freezed,
+    Object? experimental = freezed,
+    Object? hairless = freezed,
+    Object? natural = freezed,
+    Object? rare = freezed,
+    Object? rex = freezed,
+    Object? suppressedTail = freezed,
+    Object? shortLegs = freezed,
     Object? wikipediaUrl = null,
-    Object? hypoallergenic = null,
-    Object? referenceImageId = null,
+    Object? hypoallergenic = freezed,
+    Object? referenceImageId = freezed,
   }) {
     return _then(_value.copyWith(
       weight: null == weight
@@ -174,18 +174,18 @@ class _$BreedCopyWithImpl<$Res, $Val extends Breed>
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      cfaUrl: null == cfaUrl
+      cfaUrl: freezed == cfaUrl
           ? _value.cfaUrl
           : cfaUrl // ignore: cast_nullable_to_non_nullable
-              as String,
-      vetstreetUrl: null == vetstreetUrl
+              as String?,
+      vetstreetUrl: freezed == vetstreetUrl
           ? _value.vetstreetUrl
           : vetstreetUrl // ignore: cast_nullable_to_non_nullable
-              as String,
-      vcahospitalsUrl: null == vcahospitalsUrl
+              as String?,
+      vcahospitalsUrl: freezed == vcahospitalsUrl
           ? _value.vcahospitalsUrl
           : vcahospitalsUrl // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       temperament: null == temperament
           ? _value.temperament
           : temperament // ignore: cast_nullable_to_non_nullable
@@ -194,122 +194,122 @@ class _$BreedCopyWithImpl<$Res, $Val extends Breed>
           ? _value.origin
           : origin // ignore: cast_nullable_to_non_nullable
               as String,
-      countryCodes: null == countryCodes
+      countryCodes: freezed == countryCodes
           ? _value.countryCodes
           : countryCodes // ignore: cast_nullable_to_non_nullable
-              as String,
-      countryCode: null == countryCode
+              as String?,
+      countryCode: freezed == countryCode
           ? _value.countryCode
           : countryCode // ignore: cast_nullable_to_non_nullable
-              as String,
-      description: null == description
+              as String?,
+      description: freezed == description
           ? _value.description
           : description // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       lifeSpan: null == lifeSpan
           ? _value.lifeSpan
           : lifeSpan // ignore: cast_nullable_to_non_nullable
               as String,
-      indoor: null == indoor
+      indoor: freezed == indoor
           ? _value.indoor
           : indoor // ignore: cast_nullable_to_non_nullable
-              as num,
-      lap: null == lap
+              as num?,
+      lap: freezed == lap
           ? _value.lap
           : lap // ignore: cast_nullable_to_non_nullable
-              as num,
-      altNames: null == altNames
+              as num?,
+      altNames: freezed == altNames
           ? _value.altNames
           : altNames // ignore: cast_nullable_to_non_nullable
-              as String,
-      adaptability: null == adaptability
+              as String?,
+      adaptability: freezed == adaptability
           ? _value.adaptability
           : adaptability // ignore: cast_nullable_to_non_nullable
-              as num,
-      affectionLevel: null == affectionLevel
+              as num?,
+      affectionLevel: freezed == affectionLevel
           ? _value.affectionLevel
           : affectionLevel // ignore: cast_nullable_to_non_nullable
-              as num,
-      childFriendly: null == childFriendly
+              as num?,
+      childFriendly: freezed == childFriendly
           ? _value.childFriendly
           : childFriendly // ignore: cast_nullable_to_non_nullable
-              as num,
-      dogFriendly: null == dogFriendly
+              as num?,
+      dogFriendly: freezed == dogFriendly
           ? _value.dogFriendly
           : dogFriendly // ignore: cast_nullable_to_non_nullable
-              as num,
-      energyLevel: null == energyLevel
+              as num?,
+      energyLevel: freezed == energyLevel
           ? _value.energyLevel
           : energyLevel // ignore: cast_nullable_to_non_nullable
-              as num,
-      grooming: null == grooming
+              as num?,
+      grooming: freezed == grooming
           ? _value.grooming
           : grooming // ignore: cast_nullable_to_non_nullable
-              as num,
-      healthIssues: null == healthIssues
+              as num?,
+      healthIssues: freezed == healthIssues
           ? _value.healthIssues
           : healthIssues // ignore: cast_nullable_to_non_nullable
-              as num,
-      intelligence: null == intelligence
+              as num?,
+      intelligence: freezed == intelligence
           ? _value.intelligence
           : intelligence // ignore: cast_nullable_to_non_nullable
-              as num,
-      sheddingLevel: null == sheddingLevel
+              as num?,
+      sheddingLevel: freezed == sheddingLevel
           ? _value.sheddingLevel
           : sheddingLevel // ignore: cast_nullable_to_non_nullable
-              as num,
-      socialNeeds: null == socialNeeds
+              as num?,
+      socialNeeds: freezed == socialNeeds
           ? _value.socialNeeds
           : socialNeeds // ignore: cast_nullable_to_non_nullable
-              as num,
-      strangerFriendly: null == strangerFriendly
+              as num?,
+      strangerFriendly: freezed == strangerFriendly
           ? _value.strangerFriendly
           : strangerFriendly // ignore: cast_nullable_to_non_nullable
-              as num,
-      vocalisation: null == vocalisation
+              as num?,
+      vocalisation: freezed == vocalisation
           ? _value.vocalisation
           : vocalisation // ignore: cast_nullable_to_non_nullable
-              as num,
-      experimental: null == experimental
+              as num?,
+      experimental: freezed == experimental
           ? _value.experimental
           : experimental // ignore: cast_nullable_to_non_nullable
-              as num,
-      hairless: null == hairless
+              as num?,
+      hairless: freezed == hairless
           ? _value.hairless
           : hairless // ignore: cast_nullable_to_non_nullable
-              as num,
-      natural: null == natural
+              as num?,
+      natural: freezed == natural
           ? _value.natural
           : natural // ignore: cast_nullable_to_non_nullable
-              as num,
-      rare: null == rare
+              as num?,
+      rare: freezed == rare
           ? _value.rare
           : rare // ignore: cast_nullable_to_non_nullable
-              as num,
-      rex: null == rex
+              as num?,
+      rex: freezed == rex
           ? _value.rex
           : rex // ignore: cast_nullable_to_non_nullable
-              as num,
-      suppressedTail: null == suppressedTail
+              as num?,
+      suppressedTail: freezed == suppressedTail
           ? _value.suppressedTail
           : suppressedTail // ignore: cast_nullable_to_non_nullable
-              as num,
-      shortLegs: null == shortLegs
+              as num?,
+      shortLegs: freezed == shortLegs
           ? _value.shortLegs
           : shortLegs // ignore: cast_nullable_to_non_nullable
-              as num,
+              as num?,
       wikipediaUrl: null == wikipediaUrl
           ? _value.wikipediaUrl
           : wikipediaUrl // ignore: cast_nullable_to_non_nullable
               as String,
-      hypoallergenic: null == hypoallergenic
+      hypoallergenic: freezed == hypoallergenic
           ? _value.hypoallergenic
           : hypoallergenic // ignore: cast_nullable_to_non_nullable
-              as num,
-      referenceImageId: null == referenceImageId
+              as num?,
+      referenceImageId: freezed == referenceImageId
           ? _value.referenceImageId
           : referenceImageId // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
     ) as $Val);
   }
 
@@ -332,40 +332,40 @@ abstract class _$$_BreedCopyWith<$Res> implements $BreedCopyWith<$Res> {
       {Weight weight,
       String id,
       String name,
-      String cfaUrl,
-      String vetstreetUrl,
-      String vcahospitalsUrl,
+      String? cfaUrl,
+      String? vetstreetUrl,
+      String? vcahospitalsUrl,
       String temperament,
       String origin,
-      String countryCodes,
-      String countryCode,
-      String description,
+      String? countryCodes,
+      String? countryCode,
+      String? description,
       String lifeSpan,
-      num indoor,
-      num lap,
-      String altNames,
-      num adaptability,
-      num affectionLevel,
-      num childFriendly,
-      num dogFriendly,
-      num energyLevel,
-      num grooming,
-      num healthIssues,
-      num intelligence,
-      num sheddingLevel,
-      num socialNeeds,
-      num strangerFriendly,
-      num vocalisation,
-      num experimental,
-      num hairless,
-      num natural,
-      num rare,
-      num rex,
-      num suppressedTail,
-      num shortLegs,
+      num? indoor,
+      num? lap,
+      String? altNames,
+      num? adaptability,
+      num? affectionLevel,
+      num? childFriendly,
+      num? dogFriendly,
+      num? energyLevel,
+      num? grooming,
+      num? healthIssues,
+      num? intelligence,
+      num? sheddingLevel,
+      num? socialNeeds,
+      num? strangerFriendly,
+      num? vocalisation,
+      num? experimental,
+      num? hairless,
+      num? natural,
+      num? rare,
+      num? rex,
+      num? suppressedTail,
+      num? shortLegs,
       String wikipediaUrl,
-      num hypoallergenic,
-      String referenceImageId});
+      num? hypoallergenic,
+      String? referenceImageId});
 
   @override
   $WeightCopyWith<$Res> get weight;
@@ -383,40 +383,40 @@ class __$$_BreedCopyWithImpl<$Res> extends _$BreedCopyWithImpl<$Res, _$_Breed>
     Object? weight = null,
     Object? id = null,
     Object? name = null,
-    Object? cfaUrl = null,
-    Object? vetstreetUrl = null,
-    Object? vcahospitalsUrl = null,
+    Object? cfaUrl = freezed,
+    Object? vetstreetUrl = freezed,
+    Object? vcahospitalsUrl = freezed,
     Object? temperament = null,
     Object? origin = null,
-    Object? countryCodes = null,
-    Object? countryCode = null,
-    Object? description = null,
+    Object? countryCodes = freezed,
+    Object? countryCode = freezed,
+    Object? description = freezed,
     Object? lifeSpan = null,
-    Object? indoor = null,
-    Object? lap = null,
-    Object? altNames = null,
-    Object? adaptability = null,
-    Object? affectionLevel = null,
-    Object? childFriendly = null,
-    Object? dogFriendly = null,
-    Object? energyLevel = null,
-    Object? grooming = null,
-    Object? healthIssues = null,
-    Object? intelligence = null,
-    Object? sheddingLevel = null,
-    Object? socialNeeds = null,
-    Object? strangerFriendly = null,
-    Object? vocalisation = null,
-    Object? experimental = null,
-    Object? hairless = null,
-    Object? natural = null,
-    Object? rare = null,
-    Object? rex = null,
-    Object? suppressedTail = null,
-    Object? shortLegs = null,
+    Object? indoor = freezed,
+    Object? lap = freezed,
+    Object? altNames = freezed,
+    Object? adaptability = freezed,
+    Object? affectionLevel = freezed,
+    Object? childFriendly = freezed,
+    Object? dogFriendly = freezed,
+    Object? energyLevel = freezed,
+    Object? grooming = freezed,
+    Object? healthIssues = freezed,
+    Object? intelligence = freezed,
+    Object? sheddingLevel = freezed,
+    Object? socialNeeds = freezed,
+    Object? strangerFriendly = freezed,
+    Object? vocalisation = freezed,
+    Object? experimental = freezed,
+    Object? hairless = freezed,
+    Object? natural = freezed,
+    Object? rare = freezed,
+    Object? rex = freezed,
+    Object? suppressedTail = freezed,
+    Object? shortLegs = freezed,
     Object? wikipediaUrl = null,
-    Object? hypoallergenic = null,
-    Object? referenceImageId = null,
+    Object? hypoallergenic = freezed,
+    Object? referenceImageId = freezed,
   }) {
     return _then(_$_Breed(
       weight: null == weight
@@ -431,18 +431,18 @@ class __$$_BreedCopyWithImpl<$Res> extends _$BreedCopyWithImpl<$Res, _$_Breed>
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      cfaUrl: null == cfaUrl
+      cfaUrl: freezed == cfaUrl
           ? _value.cfaUrl
           : cfaUrl // ignore: cast_nullable_to_non_nullable
-              as String,
-      vetstreetUrl: null == vetstreetUrl
+              as String?,
+      vetstreetUrl: freezed == vetstreetUrl
           ? _value.vetstreetUrl
           : vetstreetUrl // ignore: cast_nullable_to_non_nullable
-              as String,
-      vcahospitalsUrl: null == vcahospitalsUrl
+              as String?,
+      vcahospitalsUrl: freezed == vcahospitalsUrl
           ? _value.vcahospitalsUrl
           : vcahospitalsUrl // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       temperament: null == temperament
           ? _value.temperament
           : temperament // ignore: cast_nullable_to_non_nullable
@@ -451,122 +451,122 @@ class __$$_BreedCopyWithImpl<$Res> extends _$BreedCopyWithImpl<$Res, _$_Breed>
           ? _value.origin
           : origin // ignore: cast_nullable_to_non_nullable
               as String,
-      countryCodes: null == countryCodes
+      countryCodes: freezed == countryCodes
           ? _value.countryCodes
           : countryCodes // ignore: cast_nullable_to_non_nullable
-              as String,
-      countryCode: null == countryCode
+              as String?,
+      countryCode: freezed == countryCode
           ? _value.countryCode
           : countryCode // ignore: cast_nullable_to_non_nullable
-              as String,
-      description: null == description
+              as String?,
+      description: freezed == description
           ? _value.description
           : description // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       lifeSpan: null == lifeSpan
           ? _value.lifeSpan
           : lifeSpan // ignore: cast_nullable_to_non_nullable
               as String,
-      indoor: null == indoor
+      indoor: freezed == indoor
           ? _value.indoor
           : indoor // ignore: cast_nullable_to_non_nullable
-              as num,
-      lap: null == lap
+              as num?,
+      lap: freezed == lap
           ? _value.lap
           : lap // ignore: cast_nullable_to_non_nullable
-              as num,
-      altNames: null == altNames
+              as num?,
+      altNames: freezed == altNames
           ? _value.altNames
           : altNames // ignore: cast_nullable_to_non_nullable
-              as String,
-      adaptability: null == adaptability
+              as String?,
+      adaptability: freezed == adaptability
           ? _value.adaptability
           : adaptability // ignore: cast_nullable_to_non_nullable
-              as num,
-      affectionLevel: null == affectionLevel
+              as num?,
+      affectionLevel: freezed == affectionLevel
           ? _value.affectionLevel
           : affectionLevel // ignore: cast_nullable_to_non_nullable
-              as num,
-      childFriendly: null == childFriendly
+              as num?,
+      childFriendly: freezed == childFriendly
           ? _value.childFriendly
           : childFriendly // ignore: cast_nullable_to_non_nullable
-              as num,
-      dogFriendly: null == dogFriendly
+              as num?,
+      dogFriendly: freezed == dogFriendly
           ? _value.dogFriendly
           : dogFriendly // ignore: cast_nullable_to_non_nullable
-              as num,
-      energyLevel: null == energyLevel
+              as num?,
+      energyLevel: freezed == energyLevel
           ? _value.energyLevel
           : energyLevel // ignore: cast_nullable_to_non_nullable
-              as num,
-      grooming: null == grooming
+              as num?,
+      grooming: freezed == grooming
           ? _value.grooming
           : grooming // ignore: cast_nullable_to_non_nullable
-              as num,
-      healthIssues: null == healthIssues
+              as num?,
+      healthIssues: freezed == healthIssues
           ? _value.healthIssues
           : healthIssues // ignore: cast_nullable_to_non_nullable
-              as num,
-      intelligence: null == intelligence
+              as num?,
+      intelligence: freezed == intelligence
           ? _value.intelligence
           : intelligence // ignore: cast_nullable_to_non_nullable
-              as num,
-      sheddingLevel: null == sheddingLevel
+              as num?,
+      sheddingLevel: freezed == sheddingLevel
           ? _value.sheddingLevel
           : sheddingLevel // ignore: cast_nullable_to_non_nullable
-              as num,
-      socialNeeds: null == socialNeeds
+              as num?,
+      socialNeeds: freezed == socialNeeds
           ? _value.socialNeeds
           : socialNeeds // ignore: cast_nullable_to_non_nullable
-              as num,
-      strangerFriendly: null == strangerFriendly
+              as num?,
+      strangerFriendly: freezed == strangerFriendly
           ? _value.strangerFriendly
           : strangerFriendly // ignore: cast_nullable_to_non_nullable
-              as num,
-      vocalisation: null == vocalisation
+              as num?,
+      vocalisation: freezed == vocalisation
           ? _value.vocalisation
           : vocalisation // ignore: cast_nullable_to_non_nullable
-              as num,
-      experimental: null == experimental
+              as num?,
+      experimental: freezed == experimental
           ? _value.experimental
           : experimental // ignore: cast_nullable_to_non_nullable
-              as num,
-      hairless: null == hairless
+              as num?,
+      hairless: freezed == hairless
           ? _value.hairless
           : hairless // ignore: cast_nullable_to_non_nullable
-              as num,
-      natural: null == natural
+              as num?,
+      natural: freezed == natural
           ? _value.natural
           : natural // ignore: cast_nullable_to_non_nullable
-              as num,
-      rare: null == rare
+              as num?,
+      rare: freezed == rare
           ? _value.rare
           : rare // ignore: cast_nullable_to_non_nullable
-              as num,
-      rex: null == rex
+              as num?,
+      rex: freezed == rex
           ? _value.rex
           : rex // ignore: cast_nullable_to_non_nullable
-              as num,
-      suppressedTail: null == suppressedTail
+              as num?,
+      suppressedTail: freezed == suppressedTail
           ? _value.suppressedTail
           : suppressedTail // ignore: cast_nullable_to_non_nullable
-              as num,
-      shortLegs: null == shortLegs
+              as num?,
+      shortLegs: freezed == shortLegs
           ? _value.shortLegs
           : shortLegs // ignore: cast_nullable_to_non_nullable
-              as num,
+              as num?,
       wikipediaUrl: null == wikipediaUrl
           ? _value.wikipediaUrl
           : wikipediaUrl // ignore: cast_nullable_to_non_nullable
               as String,
-      hypoallergenic: null == hypoallergenic
+      hypoallergenic: freezed == hypoallergenic
           ? _value.hypoallergenic
           : hypoallergenic // ignore: cast_nullable_to_non_nullable
-              as num,
-      referenceImageId: null == referenceImageId
+              as num?,
+      referenceImageId: freezed == referenceImageId
           ? _value.referenceImageId
           : referenceImageId // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
     ));
   }
 }
@@ -579,40 +579,40 @@ class _$_Breed implements _Breed {
       {required this.weight,
       required this.id,
       required this.name,
-      required this.cfaUrl,
-      required this.vetstreetUrl,
-      required this.vcahospitalsUrl,
+      this.cfaUrl,
+      this.vetstreetUrl,
+      this.vcahospitalsUrl,
       required this.temperament,
       required this.origin,
-      required this.countryCodes,
-      required this.countryCode,
-      required this.description,
+      this.countryCodes,
+      this.countryCode,
+      this.description,
       required this.lifeSpan,
-      required this.indoor,
-      required this.lap,
-      required this.altNames,
-      required this.adaptability,
-      required this.affectionLevel,
-      required this.childFriendly,
-      required this.dogFriendly,
-      required this.energyLevel,
-      required this.grooming,
-      required this.healthIssues,
-      required this.intelligence,
-      required this.sheddingLevel,
-      required this.socialNeeds,
-      required this.strangerFriendly,
-      required this.vocalisation,
-      required this.experimental,
-      required this.hairless,
-      required this.natural,
-      required this.rare,
-      required this.rex,
-      required this.suppressedTail,
-      required this.shortLegs,
+      this.indoor,
+      this.lap,
+      this.altNames,
+      this.adaptability,
+      this.affectionLevel,
+      this.childFriendly,
+      this.dogFriendly,
+      this.energyLevel,
+      this.grooming,
+      this.healthIssues,
+      this.intelligence,
+      this.sheddingLevel,
+      this.socialNeeds,
+      this.strangerFriendly,
+      this.vocalisation,
+      this.experimental,
+      this.hairless,
+      this.natural,
+      this.rare,
+      this.rex,
+      this.suppressedTail,
+      this.shortLegs,
       required this.wikipediaUrl,
-      required this.hypoallergenic,
-      required this.referenceImageId});
+      this.hypoallergenic,
+      this.referenceImageId});
 
   factory _$_Breed.fromJson(Map<String, dynamic> json) =>
       _$$_BreedFromJson(json);
@@ -624,73 +624,73 @@ class _$_Breed implements _Breed {
   @override
   final String name;
   @override
-  final String cfaUrl;
+  final String? cfaUrl;
   @override
-  final String vetstreetUrl;
+  final String? vetstreetUrl;
   @override
-  final String vcahospitalsUrl;
+  final String? vcahospitalsUrl;
   @override
   final String temperament;
   @override
   final String origin;
   @override
-  final String countryCodes;
+  final String? countryCodes;
   @override
-  final String countryCode;
+  final String? countryCode;
   @override
-  final String description;
+  final String? description;
   @override
   final String lifeSpan;
   @override
-  final num indoor;
+  final num? indoor;
   @override
-  final num lap;
+  final num? lap;
   @override
-  final String altNames;
+  final String? altNames;
   @override
-  final num adaptability;
+  final num? adaptability;
   @override
-  final num affectionLevel;
+  final num? affectionLevel;
   @override
-  final num childFriendly;
+  final num? childFriendly;
   @override
-  final num dogFriendly;
+  final num? dogFriendly;
   @override
-  final num energyLevel;
+  final num? energyLevel;
   @override
-  final num grooming;
+  final num? grooming;
   @override
-  final num healthIssues;
+  final num? healthIssues;
   @override
-  final num intelligence;
+  final num? intelligence;
   @override
-  final num sheddingLevel;
+  final num? sheddingLevel;
   @override
-  final num socialNeeds;
+  final num? socialNeeds;
   @override
-  final num strangerFriendly;
+  final num? strangerFriendly;
   @override
-  final num vocalisation;
+  final num? vocalisation;
   @override
-  final num experimental;
+  final num? experimental;
   @override
-  final num hairless;
+  final num? hairless;
   @override
-  final num natural;
+  final num? natural;
   @override
-  final num rare;
+  final num? rare;
   @override
-  final num rex;
+  final num? rex;
   @override
-  final num suppressedTail;
+  final num? suppressedTail;
   @override
-  final num shortLegs;
+  final num? shortLegs;
   @override
   final String wikipediaUrl;
   @override
-  final num hypoallergenic;
+  final num? hypoallergenic;
   @override
-  final String referenceImageId;
+  final String? referenceImageId;
 
   @override
   String toString() {
@@ -830,40 +830,40 @@ abstract class _Breed implements Breed {
       {required final Weight weight,
       required final String id,
       required final String name,
-      required final String cfaUrl,
-      required final String vetstreetUrl,
-      required final String vcahospitalsUrl,
+      final String? cfaUrl,
+      final String? vetstreetUrl,
+      final String? vcahospitalsUrl,
       required final String temperament,
       required final String origin,
-      required final String countryCodes,
-      required final String countryCode,
-      required final String description,
+      final String? countryCodes,
+      final String? countryCode,
+      final String? description,
       required final String lifeSpan,
-      required final num indoor,
-      required final num lap,
-      required final String altNames,
-      required final num adaptability,
-      required final num affectionLevel,
-      required final num childFriendly,
-      required final num dogFriendly,
-      required final num energyLevel,
-      required final num grooming,
-      required final num healthIssues,
-      required final num intelligence,
-      required final num sheddingLevel,
-      required final num socialNeeds,
-      required final num strangerFriendly,
-      required final num vocalisation,
-      required final num experimental,
-      required final num hairless,
-      required final num natural,
-      required final num rare,
-      required final num rex,
-      required final num suppressedTail,
-      required final num shortLegs,
+      final num? indoor,
+      final num? lap,
+      final String? altNames,
+      final num? adaptability,
+      final num? affectionLevel,
+      final num? childFriendly,
+      final num? dogFriendly,
+      final num? energyLevel,
+      final num? grooming,
+      final num? healthIssues,
+      final num? intelligence,
+      final num? sheddingLevel,
+      final num? socialNeeds,
+      final num? strangerFriendly,
+      final num? vocalisation,
+      final num? experimental,
+      final num? hairless,
+      final num? natural,
+      final num? rare,
+      final num? rex,
+      final num? suppressedTail,
+      final num? shortLegs,
       required final String wikipediaUrl,
-      required final num hypoallergenic,
-      required final String referenceImageId}) = _$_Breed;
+      final num? hypoallergenic,
+      final String? referenceImageId}) = _$_Breed;
 
   factory _Breed.fromJson(Map<String, dynamic> json) = _$_Breed.fromJson;
 
@@ -874,73 +874,73 @@ abstract class _Breed implements Breed {
   @override
   String get name;
   @override
-  String get cfaUrl;
+  String? get cfaUrl;
   @override
-  String get vetstreetUrl;
+  String? get vetstreetUrl;
   @override
-  String get vcahospitalsUrl;
+  String? get vcahospitalsUrl;
   @override
   String get temperament;
   @override
   String get origin;
   @override
-  String get countryCodes;
+  String? get countryCodes;
   @override
-  String get countryCode;
+  String? get countryCode;
   @override
-  String get description;
+  String? get description;
   @override
   String get lifeSpan;
   @override
-  num get indoor;
+  num? get indoor;
   @override
-  num get lap;
+  num? get lap;
   @override
-  String get altNames;
+  String? get altNames;
   @override
-  num get adaptability;
+  num? get adaptability;
   @override
-  num get affectionLevel;
+  num? get affectionLevel;
   @override
-  num get childFriendly;
+  num? get childFriendly;
   @override
-  num get dogFriendly;
+  num? get dogFriendly;
   @override
-  num get energyLevel;
+  num? get energyLevel;
   @override
-  num get grooming;
+  num? get grooming;
   @override
-  num get healthIssues;
+  num? get healthIssues;
   @override
-  num get intelligence;
+  num? get intelligence;
   @override
-  num get sheddingLevel;
+  num? get sheddingLevel;
   @override
-  num get socialNeeds;
+  num? get socialNeeds;
   @override
-  num get strangerFriendly;
+  num? get strangerFriendly;
   @override
-  num get vocalisation;
+  num? get vocalisation;
   @override
-  num get experimental;
+  num? get experimental;
   @override
-  num get hairless;
+  num? get hairless;
   @override
-  num get natural;
+  num? get natural;
   @override
-  num get rare;
+  num? get rare;
   @override
-  num get rex;
+  num? get rex;
   @override
-  num get suppressedTail;
+  num? get suppressedTail;
   @override
-  num get shortLegs;
+  num? get shortLegs;
   @override
   String get wikipediaUrl;
   @override
-  num get hypoallergenic;
+  num? get hypoallergenic;
   @override
-  String get referenceImageId;
+  String? get referenceImageId;
   @override
   @JsonKey(ignore: true)
   _$$_BreedCopyWith<_$_Breed> get copyWith =>
