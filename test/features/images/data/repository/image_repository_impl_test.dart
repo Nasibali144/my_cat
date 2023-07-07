@@ -5,7 +5,7 @@ import 'package:mockito/mockito.dart';
 import 'package:mockito/annotations.dart';
 import 'package:my_cat/common/data/data_source/remote_data_source/remote_data_source.dart';
 import 'package:my_cat/core/utils/apis/apis.dart';
-import 'package:my_cat/core/utils/params/image_pagination_param.dart';
+import 'package:my_cat/core/utils/params/image_search_param.dart';
 import 'package:my_cat/features/breeds/domain/entity/breed/breed.dart';
 import 'package:my_cat/features/breeds/domain/entity/weight/weight.dart';
 import 'package:my_cat/features/images/data/repository/image_repository_impl.dart';

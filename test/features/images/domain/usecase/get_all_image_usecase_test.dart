@@ -4,7 +4,7 @@ import 'package:mockito/mockito.dart';
 import 'package:mockito/annotations.dart';
 import 'package:my_cat/core/errors/failures/failure.dart';
 import 'package:my_cat/core/errors/failures/network_failure.dart';
-import 'package:my_cat/core/utils/params/image_pagination_param.dart';
+import 'package:my_cat/core/utils/params/image_search_param.dart';
 import 'package:my_cat/features/breeds/domain/entity/breed/breed.dart';
 import 'package:my_cat/features/breeds/domain/entity/weight/weight.dart';
 import 'package:my_cat/features/images/domain/entity/category/category.dart';

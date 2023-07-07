@@ -1,6 +1,6 @@
 import 'package:fpdart/fpdart.dart';
 import 'package:my_cat/core/errors/failures/failure.dart';
-import 'package:my_cat/core/utils/params/image_pagination_param.dart';
+import 'package:my_cat/core/utils/params/image_search_param.dart';
 import 'package:my_cat/features/images/domain/entity/image/image_model.dart';
 import 'package:my_cat/features/images/domain/repository/image_repository.dart';
 import 'image_usecase.dart';

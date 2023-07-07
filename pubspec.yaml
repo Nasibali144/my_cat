@@ -27,6 +27,10 @@ dependencies:
   # state management
   provider: ^6.0.5
 
+  # storage
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
