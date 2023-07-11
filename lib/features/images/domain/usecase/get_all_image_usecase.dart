@@ -6,16 +6,15 @@ import 'package:my_cat/features/images/domain/repository/image_repository.dart';
 import 'image_usecase.dart';
 
 class GetAllImageUsecase
-    extends ImageUseCase<List<FullImage>, ImagePaginationParam> {
+    extends ImageUseCase<List<FullImage>, ImageSearchParam> {
   final ImageRepository repository;
 
   const GetAllImageUsecase({required this.repository});
 
   @override
-  Future<Either<Failure, List<FullImage>>> call(ImagePaginationParam parameter) async {
-    int page = parameter.page;
-    int limit = parameter.limit;
-    final result = await repository.getAllImages(page, limit);
+  Future<Either<Failure, List<FullImage>>> call(ImageSearchParam parameter) async {
+
+    final result = await repository.getAllImages(parameter);
 
     return result.fold(
       (l) => left(l),

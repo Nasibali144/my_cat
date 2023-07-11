@@ -1,6 +1,5 @@
 import 'package:flutter/cupertino.dart';
 import 'package:hive_flutter/hive_flutter.dart';
-
 import 'local_data_source.dart';
 
 class LocalDataSourceImpl extends LocalDataSource {
@@ -44,12 +43,5 @@ class LocalDataSourceImpl extends LocalDataSource {
     final box = Hive.box<T>(title.name);
     await box.put(key, data);
   }
-
-  @override
-  Future<bool> update<T>(Feature title, String key, T data) {
-    // TODO: implement update
-    throw UnimplementedError();
-  }
-
 }
 

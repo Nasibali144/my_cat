@@ -20,7 +20,7 @@ class ImageController with ChangeNotifier {
     isLoading = true;
     notifyListeners();
 
-    final result = await useCase(const ImagePaginationParam(page: 0, limit: 10));
+    final result = await useCase(const ImageSearchParam(page: 0, limit: 10));
 
     result.fold(
       (l) {

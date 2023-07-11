@@ -13,7 +13,6 @@ abstract class LocalDataSource {
 
   Future<bool> delete<T>(Feature title, String key);
 
-  Future<bool> update<T>(Feature title, String key, T data);
 }
 
 enum Feature {
