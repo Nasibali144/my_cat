@@ -29,7 +29,7 @@ class ImageController with ChangeNotifier {
 
     result.fold(
       (error) => debugPrint(error.message),
-      (images) => list = images,
+      (images) => list.addAll(images),
     );
 
     isLoading = false;
