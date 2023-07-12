@@ -4,7 +4,7 @@ import 'package:my_cat/core/utils/connectivities/connection_checker.dart';
 class ConnectionCheckerImpl implements ConnectionChecker {
   final Connectivity connectivity;
 
-  const ConnectionCheckerImpl(this.connectivity);
+  const ConnectionCheckerImpl({required this.connectivity});
 
   @override
   Future<bool> check() async {

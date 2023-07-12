@@ -54,7 +54,7 @@ mixin _$Breed {
   num? get rex => throw _privateConstructorUsedError;
   num? get suppressedTail => throw _privateConstructorUsedError;
   num? get shortLegs => throw _privateConstructorUsedError;
-  String get wikipediaUrl => throw _privateConstructorUsedError;
+  String? get wikipediaUrl => throw _privateConstructorUsedError;
   num? get hypoallergenic => throw _privateConstructorUsedError;
   String? get referenceImageId => throw _privateConstructorUsedError;
 
@@ -103,7 +103,7 @@ abstract class $BreedCopyWith<$Res> {
       num? rex,
       num? suppressedTail,
       num? shortLegs,
-      String wikipediaUrl,
+      String? wikipediaUrl,
       num? hypoallergenic,
       String? referenceImageId});
 
@@ -157,7 +157,7 @@ class _$BreedCopyWithImpl<$Res, $Val extends Breed>
     Object? rex = freezed,
     Object? suppressedTail = freezed,
     Object? shortLegs = freezed,
-    Object? wikipediaUrl = null,
+    Object? wikipediaUrl = freezed,
     Object? hypoallergenic = freezed,
     Object? referenceImageId = freezed,
   }) {
@@ -298,10 +298,10 @@ class _$BreedCopyWithImpl<$Res, $Val extends Breed>
           ? _value.shortLegs
           : shortLegs // ignore: cast_nullable_to_non_nullable
               as num?,
-      wikipediaUrl: null == wikipediaUrl
+      wikipediaUrl: freezed == wikipediaUrl
           ? _value.wikipediaUrl
           : wikipediaUrl // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       hypoallergenic: freezed == hypoallergenic
           ? _value.hypoallergenic
           : hypoallergenic // ignore: cast_nullable_to_non_nullable
@@ -363,7 +363,7 @@ abstract class _$$_BreedCopyWith<$Res> implements $BreedCopyWith<$Res> {
       num? rex,
       num? suppressedTail,
       num? shortLegs,
-      String wikipediaUrl,
+      String? wikipediaUrl,
       num? hypoallergenic,
       String? referenceImageId});
 
@@ -414,7 +414,7 @@ class __$$_BreedCopyWithImpl<$Res> extends _$BreedCopyWithImpl<$Res, _$_Breed>
     Object? rex = freezed,
     Object? suppressedTail = freezed,
     Object? shortLegs = freezed,
-    Object? wikipediaUrl = null,
+    Object? wikipediaUrl = freezed,
     Object? hypoallergenic = freezed,
     Object? referenceImageId = freezed,
   }) {
@@ -555,10 +555,10 @@ class __$$_BreedCopyWithImpl<$Res> extends _$BreedCopyWithImpl<$Res, _$_Breed>
           ? _value.shortLegs
           : shortLegs // ignore: cast_nullable_to_non_nullable
               as num?,
-      wikipediaUrl: null == wikipediaUrl
+      wikipediaUrl: freezed == wikipediaUrl
           ? _value.wikipediaUrl
           : wikipediaUrl // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       hypoallergenic: freezed == hypoallergenic
           ? _value.hypoallergenic
           : hypoallergenic // ignore: cast_nullable_to_non_nullable
@@ -610,7 +610,7 @@ class _$_Breed implements _Breed {
       this.rex,
       this.suppressedTail,
       this.shortLegs,
-      required this.wikipediaUrl,
+      this.wikipediaUrl,
       this.hypoallergenic,
       this.referenceImageId});
 
@@ -686,7 +686,7 @@ class _$_Breed implements _Breed {
   @override
   final num? shortLegs;
   @override
-  final String wikipediaUrl;
+  final String? wikipediaUrl;
   @override
   final num? hypoallergenic;
   @override
@@ -861,7 +861,7 @@ abstract class _Breed implements Breed {
       final num? rex,
       final num? suppressedTail,
       final num? shortLegs,
-      required final String wikipediaUrl,
+      final String? wikipediaUrl,
       final num? hypoallergenic,
       final String? referenceImageId}) = _$_Breed;
 
@@ -936,7 +936,7 @@ abstract class _Breed implements Breed {
   @override
   num? get shortLegs;
   @override
-  String get wikipediaUrl;
+  String? get wikipediaUrl;
   @override
   num? get hypoallergenic;
   @override

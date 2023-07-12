@@ -43,7 +43,7 @@ class Breed with _$Breed {
     num? rex,
     num? suppressedTail,
     num? shortLegs,
-    required String wikipediaUrl,
+    String? wikipediaUrl,
     num? hypoallergenic,
     String? referenceImageId,
   }) = _Breed;

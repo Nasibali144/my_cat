@@ -1,17 +1,16 @@
-import 'package:hive/hive.dart';
-
 abstract class LocalDataSource {
+  const LocalDataSource();
   Future<void> init();
 
-  Future<Box<T>> createBox<T>(Feature title);
+  Future<void> createBox<T>({Feature? title});
 
-  Future<void> deleteBox(Feature title);
+  Future<void> deleteBox({Feature? title});
 
-  Future<void> save<T>(Feature title, String key, T data);
+  Future<void> save<T>(String key, T data, {Feature? title});
 
-  T read<T>(Feature title, String key);
+  T read<T>(String key, {Feature? title, T? defaultValue});
 
-  Future<bool> delete<T>(Feature title, String key);
+  Future<bool> delete<T>(String key, {Feature? title});
 
 }
 

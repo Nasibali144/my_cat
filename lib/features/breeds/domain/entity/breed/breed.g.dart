@@ -41,7 +41,7 @@ _$_Breed _$$_BreedFromJson(Map<String, dynamic> json) => _$_Breed(
       rex: json['rex'] as num?,
       suppressedTail: json['suppressed_tail'] as num?,
       shortLegs: json['short_legs'] as num?,
-      wikipediaUrl: json['wikipedia_url'] as String,
+      wikipediaUrl: json['wikipedia_url'] as String?,
       hypoallergenic: json['hypoallergenic'] as num?,
       referenceImageId: json['reference_image_id'] as String?,
     );
