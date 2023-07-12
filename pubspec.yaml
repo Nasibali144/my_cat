@@ -31,6 +31,9 @@ dependencies:
   hive: ^2.2.3
   hive_flutter: ^1.1.0
 
+  # network connection checker
+  connectivity_plus: ^4.0.1
+
 dev_dependencies:
   flutter_test:
     sdk: flutter

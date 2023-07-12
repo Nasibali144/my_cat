@@ -16,6 +16,8 @@ class ImageRepositoryImpl extends ImageRepository {
   @override
   Future<Either<Failure, List>> getAllImages(ImageSearchParam parameter) async {
     try {
+      /// TODO: 1. check ? remote : local
+
       final data = await remoteDataSource.methodGet(Api.images, param: parameter.toParam) as List;
       return right(data);
     } on NetworkException catch (e) {
