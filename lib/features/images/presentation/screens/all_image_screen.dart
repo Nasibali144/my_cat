@@ -2,8 +2,10 @@ import 'dart:math';
 
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
+import 'package:my_cat/common/presentation/controllers/connectivity_controller.dart';
 import 'package:my_cat/features/images/domain/entity/image/image_model.dart';
 import 'package:my_cat/features/images/presentation/controller/image_controller.dart';
+import 'package:my_cat/features/images/presentation/screens/detail_image_screen.dart';
 import 'package:provider/provider.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 
@@ -15,8 +17,10 @@ class AllImageScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Consumer<ImageController>(
-        builder: (context, controller, _) {
+      body: Consumer2<ImageController, ConnectivityController>(
+        builder: (context, controller, connectivityController,_) {
+          connectivityController.connectionContext = context;
+
           return RefreshIndicator(
             onRefresh: controller.refresh,
             child: Stack(
@@ -52,18 +56,25 @@ class ImageCard extends StatelessWidget {
 
   const ImageCard({Key? key, required this.image}) : super(key: key);
 
+  void goDetail(BuildContext context) {
+    Navigator.of(context).push(MaterialPageRoute(builder: (context) => DetailImageScreen(image: image, key: key)));
+  }
+
   @override
   Widget build(BuildContext context) {
     final ratio = image.width / image.height;
-    return AspectRatio(
-      aspectRatio: ratio,
-      child: CachedNetworkImage(
-        imageUrl: image.url,
-        placeholder: (context, url) => ColoredBox(
-          color: Colors.primaries[Random().nextInt(Colors.primaries.length)],
+    return GestureDetector(
+      onTap: () => goDetail(context),
+      child: AspectRatio(
+        aspectRatio: ratio,
+        child: CachedNetworkImage(
+          imageUrl: image.url,
+          placeholder: (context, url) => ColoredBox(
+            color: Colors.primaries[Random().nextInt(Colors.primaries.length)],
+          ),
+          errorWidget: (context, url, error) => const Icon(Icons.error),
+          imageBuilder: (context, imageProvider) => Image(image: imageProvider),
         ),
-        errorWidget: (context, url, error) => const Icon(Icons.error),
-        imageBuilder: (context, imageProvider) => Image(image: imageProvider),
       ),
     );
   }

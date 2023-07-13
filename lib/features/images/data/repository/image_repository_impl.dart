@@ -1,5 +1,4 @@
 import 'dart:convert';
-import 'package:flutter/foundation.dart';
 import 'package:fpdart/fpdart.dart';
 import 'package:my_cat/common/data/data_source/local_data_source/local_data_source.dart';
 import 'package:my_cat/common/data/data_source/remote_data_source/remote_data_source.dart';
