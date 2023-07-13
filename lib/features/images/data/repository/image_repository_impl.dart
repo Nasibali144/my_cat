@@ -1,5 +1,4 @@
 import 'dart:convert';
-
 import 'package:flutter/foundation.dart';
 import 'package:fpdart/fpdart.dart';
 import 'package:my_cat/common/data/data_source/local_data_source/local_data_source.dart';
@@ -31,28 +30,21 @@ class ImageRepositoryImpl extends ImageRepository {
       await localDataSource.createBox<String>();
       final isConnected = await connectionChecker.check();
 
-      /// database refresh
-      if(isConnected && parameter.page == 0) {
-        await localDataSource.delete<String>("all");
-      }
-
-      /// get data from network
-      if (isConnected) {
+      if(isConnected) {
+        /// wifi on
         data = await remoteDataSource.methodGet(Api.images, param: parameter.toParam) as List;
+        if(parameter.page == 0) {
+          localDataSource.save<String>("all", jsonEncode(data));
+        } else {
+          allData = jsonDecode(localDataSource.read<String>("all", defaultValue: '[]'));
+          allData.addAll(data);
+          localDataSource.save<String>("all", jsonEncode(allData));
+        }
+      } else {
+        if(parameter.page == 0) {
+          data = jsonDecode(localDataSource.read<String>("all", defaultValue: '[]'));
+        }
       }
-
-      allData = jsonDecode(localDataSource.read<String>("all", defaultValue: '[]'));
-
-      allData.addAll(data);
-      localDataSource.save<String>("all", jsonEncode(allData));
-
-      if(allData.length == parameter.page * parameter.limit) {
-        data = allData.sublist(parameter.page * parameter.limit, (parameter.page + 1) * parameter.limit);
-      }
-
-      debugPrint(data.toString());
-      debugPrint(allData.length.toString());
-      debugPrint(data.length.toString());
 
       return right(data);
     } on NetworkException catch (e) {

@@ -25,7 +25,7 @@ class ImageController with ChangeNotifier {
     isLoading = true;
     notifyListeners();
 
-    final result = await useCase(ImageSearchParam(page: page, limit: limit));
+    final result = await useCase(ImageSearchParam(page: page, limit: limit, order: ImageOrder.ASC));
 
     result.fold(
       (error) => debugPrint(error.message),
@@ -46,7 +46,7 @@ pixels - ${scrollController.position.pixels}
 maxScrollExtent - ${scrollController.position.maxScrollExtent}
 -------------------------------------------""");
 
-        page++;
+        page = list.length ~/ limit;
         getAllImage();
       }
     });
