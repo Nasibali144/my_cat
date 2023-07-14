@@ -40,6 +40,9 @@ dependencies:
   # masonry grid view
   flutter_staggered_grid_view: ^0.6.2
 
+  # dependency injection
+  get_it: ^7.6.0
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
